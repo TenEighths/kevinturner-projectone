@@ -1,0 +1,55 @@
+/*
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+*/
+
+@import 'mixins';
+@import 'var';
+
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    @include fontStyle(37, 700, 0.9px);
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    @include fontStyle(18px, 400, 1.8px);
+    text-align: center;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+    @include fontStyle(14px, 700, 0.7px);
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a {
+    @include fontStyle(14px, 400, 0.3px);
+    text-align: left;
+    color: $black;
+    &:hover {
+        text-decoration: line-through;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    @include fontStyle(14px, 400, 0.3px);
+}

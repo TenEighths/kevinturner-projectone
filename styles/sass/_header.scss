@@ -1,0 +1,31 @@
+/*background image linking is broken, weirdly applies properly when exact CSS is put directly into the style.css file*/
+.header-bkg-img {
+    border: 3px solid black;
+    height: 100vh;
+    background: url(../assets/home-1.jpeg);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-nav {
+    display: flex;   
+    flex: 0 1 300px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.right-nav {
+    display: flex;
+    flex: 0 1 300px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
