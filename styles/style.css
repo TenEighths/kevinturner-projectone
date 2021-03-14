@@ -257,6 +257,12 @@ html {
   margin: 0 auto;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 37;
@@ -309,13 +315,19 @@ body {
   letter-spacing: 0.3px;
 }
 
-/*background image linking is broken, weirdly applies properly when exact CSS is put directly into the style.css file*/
+/*image linking is broken, weirdly applies properly when exact CSS is put directly into the style.css file*/
 .header-bkg-img {
   border: 3px solid black;
   height: 100vh;
   background: url(../assets/home-1.jpeg);
 }
 
+.header-bottom {
+  padding-bottom: 40px;
+  padding-top: 80px;
+}
+
+/* nav styling */
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,4 +368,123 @@ header nav {
 h1 {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+/* branding styling */
+.header-bottom img {
+  display: block;
+}
+
+.header-bottom {
+  background-color: #C3DAB7;
+}
+
+.img-container-index {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.index-img-top img {
+  width: 70%;
+}
+
+.index-img-top {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3 / span 4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  position: absolute;
+  top: -60px;
+}
+
+.index-img-bottom {
+  grid-column: 4 / -1;
+}
+
+.text-container-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.text-index-left,
+.text-index-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+/* top footer styling */
+.top-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 20px;
+}
+
+.top-footer ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.top-footer .social-icons-footer li {
+  padding-right: 10px;
+}
+
+.top-footer .recent-footer ul {
+  text-align: center;
+  list-style-type: disc;
+}
+
+/* widget/form styling*/
+.widget-footer {
+  text-align: right;
+}
+
+.widget-footer h3 {
+  text-align: right;
+}
+
+input[type=text],
+.widget-submit-btn {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+}
+
+.widget-submit-btn {
+  background-color: #C3DAB7;
+  border: none;
+}
+
+label[for=email-notifications] {
+  visibility: hidden;
+}
+
+/* copyright styling */
+.copyright {
+  border-top: 2px solid #F6F6F6;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 1px;
+  text-transform: uppercase;
 }

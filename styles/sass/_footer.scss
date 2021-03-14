@@ -1,0 +1,70 @@
+@import 'mixins';
+@import 'var';
+
+footer {
+    background-color: $black;
+    color: $white;
+}
+
+
+/* top footer styling */
+
+.top-footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    ul {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .social-icons-footer li {
+        padding-right: 10px;
+    }
+    .recent-footer ul{
+        text-align: center;
+        list-style-type: disc;
+    }
+}
+
+/* widget/form styling*/
+
+.widget-footer {
+    text-align: right;
+    h3 {
+        text-align: right;
+    }
+}
+
+input[type=text],
+.widget-submit-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+
+}
+
+.widget-submit-btn {
+    background-color: $primary;
+    border: none;
+}
+
+
+label[for=email-notifications] {
+    visibility: hidden;
+}
+
+/* copyright styling */
+
+.copyright {
+    border-top: 2px solid $white-two;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+}
+
+
+
+
+
