@@ -18,6 +18,8 @@
 header nav {
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .left-nav {
@@ -40,7 +42,7 @@ h1 {
     margin-right: 15px;
 }
 
-/* branding styling */
+/* INDEX branding styling */
 
 .header-bottom img {
     display: block;
@@ -58,10 +60,8 @@ h1 {
 
 }
 
-
 .index-img-top {
-    grid-column: 3 / span 4;
-    grid-row: 1;
+    @include gridPos(1, 3 / span 4);
     position: absolute;
     top: -65px;
     img {

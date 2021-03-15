@@ -258,7 +258,13 @@ html {
 }
 
 html,
-body {
+body,
+a,
+p,
+h1,
+h2,
+h3,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -339,6 +345,8 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .left-nav {
@@ -374,7 +382,7 @@ h1 {
   margin-right: 15px;
 }
 
-/* branding styling */
+/* INDEX branding styling */
 .header-bottom img {
   display: block;
 }
@@ -393,11 +401,11 @@ h1 {
 }
 
 .index-img-top {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 4;
-  grid-column: 3 / span 4;
   -ms-grid-row: 1;
   grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
+  grid-column: 3/span 4;
   position: absolute;
   top: -65px;
 }
@@ -429,10 +437,10 @@ h1 {
           flex-direction: column;
 }
 
+/* INDEX STYLING */
 /* caroseul styling */
 .carousel {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
 .carousel-container {
@@ -449,8 +457,7 @@ h1 {
 
 .carousel-container span {
   font-size: 36px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 40px;
 }
 
 .carousel-img-container img {
@@ -468,8 +475,7 @@ h1 {
 .about-content {
   background: url("/styles/assets/home-4.jpeg");
   border: 2px solid black;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 0 40px;
 }
 
 .about-text {
@@ -556,7 +562,7 @@ h1 {
 
 /* team styling */
 .meet-team {
-  padding-top: 40px;
+  padding: 40px 0;
 }
 
 .grid-team {
@@ -608,21 +614,36 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 600px;
+  max-width: 300px;
   margin: 0 auto;
-  width: 50%;
   justify-self: center;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.portfolio-container div {
+  width: 50%;
+}
+
+.portfolio-container a {
+  color: #333333;
+  margin: 15px 50px;
+  padding: 15px;
+  background-color: #F6F6F6;
 }
 
 .portfolio-container .img-container-portfolio {
   width: 50%;
 }
 
+.portfolio-container img {
+  height: 100%;
+}
+
 footer {
   background-color: #333333;
   color: #FFFFFF;
+  padding-top: 40px;
 }
 
 /* top footer styling */
@@ -683,4 +704,5 @@ label[for=email-notifications] {
   text-align: center;
   padding-bottom: 1px;
   text-transform: uppercase;
+  padding: 20px 0;
 }

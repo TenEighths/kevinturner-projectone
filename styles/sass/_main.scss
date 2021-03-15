@@ -1,11 +1,13 @@
 @import 'var';
 @import 'mixins';
 
+
+/* INDEX STYLING */
+
 /* caroseul styling */
 
 .carousel {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
 }
 
 .carousel-container {
@@ -14,8 +16,7 @@
     justify-content: center;
     span {
         font-size: 36px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 0 40px;
     }
 }
 
@@ -38,8 +39,7 @@
 .about-content {
     background: url('/styles/assets/home-4.jpeg');
     border: 2px solid black;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 0 40px;
 }
 
 .about-text {
@@ -99,7 +99,7 @@
 /* team styling */
 
 .meet-team {
-    padding-top: 40px;
+    padding: 40px 0;
 }
 
 .grid-team {
@@ -130,13 +130,23 @@
     .text-container-portfolio {
         display: flex;
         flex-direction: column;
-        max-width: 600px;
+        max-width: 300px;
         margin: 0 auto;
-        width: 50%;
+        // width: 50%;
         justify-self: center;
         align-self: center;
+    } div {
+        width: 50%;
+    }
+    a {
+        color: $black;
+        margin: 15px 50px;
+        padding: 15px;
+        background-color: $white-two;
     }
     .img-container-portfolio {
         width: 50%;
+    } img {
+        height: 100%;
     }
 } 
