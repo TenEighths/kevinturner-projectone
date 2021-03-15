@@ -37,9 +37,9 @@
 /* about styling */
 
 .about-content {
-    background: url('/styles/assets/home-4.jpeg');
-    border: 2px solid black;
-    padding: 0 40px;
+    background: url('assets/home-4.jpeg');
+    background-size: cover;
+    padding: 40px 0;
 }
 
 .about-text {
@@ -56,6 +56,12 @@
     padding-left: 20px;
     display: flex;
     align-items: center;
+    h3 {
+        padding: 15px 0;
+    }
+    p {
+        color: rgb(95, 95, 95);
+    };
 }
 
 
@@ -148,5 +154,22 @@
         width: 50%;
     } img {
         height: 100%;
+    }
+    h2 {
+        padding: 20px;
+    }
+
+} 
+
+/* BLOG STYLING */
+
+/* post styling */
+
+.main-content-blog {
+    padding-top: 40px;
+    h2 {
+        font-size: 37px;
+        font-weight: 700;
+        
     }
 } 

@@ -1,17 +1,8 @@
 @import 'mixins';
 @import 'var';
 
-/*image linking is broken, weirdly applies properly when exact CSS is put directly into the style.css file*/
-.header-bkg-img {
-    border: 3px solid black;
-    height: 100vh;
-    background: url('/styles/assets/home-1.jpeg');
-}
 
-.header-bottom {
-   padding-bottom: 40px;
-   padding-top: 80px;
-}
+
 
 /* nav styling */
 
@@ -43,6 +34,17 @@ h1 {
 }
 
 /* INDEX branding styling */
+
+.header-bkg-img {
+    height: 100vh;
+    background: url('assets/home-1.jpeg');
+    background-size: cover;
+}
+
+.header-bottom {
+   padding-bottom: 40px;
+   padding-top: 80px;
+}
 
 .header-bottom img {
     display: block;
@@ -78,7 +80,10 @@ h1 {
     display: flex;
     padding-top: 40px;
     text-align: center;
-}
+    h2 {
+        padding: 15px;
+    }
+} 
 
 .text-index-left,
 .text-index-right {
@@ -87,6 +92,14 @@ h1 {
     
 }
 
+/*BLOG STYLING*/
+
+
+/*background image linking is broken*/
+.blog-header {
+    height: 100vh;
+    border: 2px solid black;
+}
 
 
 

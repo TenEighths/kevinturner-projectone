@@ -264,6 +264,7 @@ p,
 h1,
 h2,
 h3,
+h4,
 ul {
   margin: 0;
   padding: 0;
@@ -285,6 +286,10 @@ h4 {
   font-weight: 400;
   letter-spacing: 1.8px;
   text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 a {
@@ -323,18 +328,6 @@ body {
 
 img {
   width: 100%;
-}
-
-/*image linking is broken, weirdly applies properly when exact CSS is put directly into the style.css file*/
-.header-bkg-img {
-  border: 3px solid black;
-  height: 100vh;
-  background: url("/styles/assets/home-1.jpeg");
-}
-
-.header-bottom {
-  padding-bottom: 40px;
-  padding-top: 80px;
 }
 
 /* nav styling */
@@ -383,6 +376,17 @@ h1 {
 }
 
 /* INDEX branding styling */
+.header-bkg-img {
+  height: 100vh;
+  background: url("assets/home-1.jpeg");
+  background-size: cover;
+}
+
+.header-bottom {
+  padding-bottom: 40px;
+  padding-top: 80px;
+}
+
 .header-bottom img {
   display: block;
 }
@@ -426,6 +430,10 @@ h1 {
   text-align: center;
 }
 
+.text-container-index h2 {
+  padding: 15px;
+}
+
 .text-index-left,
 .text-index-right {
   display: -webkit-box;
@@ -435,6 +443,13 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+/*BLOG STYLING*/
+/*background image linking is broken*/
+.blog-header {
+  height: 100vh;
+  border: 2px solid black;
 }
 
 /* INDEX STYLING */
@@ -473,9 +488,9 @@ h1 {
 
 /* about styling */
 .about-content {
-  background: url("/styles/assets/home-4.jpeg");
-  border: 2px solid black;
-  padding: 0 40px;
+  background: url("assets/home-4.jpeg");
+  background-size: cover;
+  padding: 40px 0;
 }
 
 .about-text {
@@ -497,6 +512,14 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.grid-item h3 {
+  padding: 15px 0;
+}
+
+.grid-item p {
+  color: #5f5f5f;
 }
 
 .grid-icon span {
@@ -638,6 +661,21 @@ h1 {
 
 .portfolio-container img {
   height: 100%;
+}
+
+.portfolio-container h2 {
+  padding: 20px;
+}
+
+/* BLOG STYLING */
+/* post styling */
+.main-content-blog {
+  padding-top: 40px;
+}
+
+.main-content-blog h2 {
+  font-size: 37px;
+  font-weight: 700;
 }
 
 footer {
