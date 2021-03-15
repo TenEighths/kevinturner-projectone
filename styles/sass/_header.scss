@@ -5,7 +5,7 @@
 .header-bkg-img {
     border: 3px solid black;
     height: 100vh;
-    background: url(../assets/home-1.jpeg);
+    background: url('/styles/assets/home-1.jpeg');
 }
 
 .header-bottom {
@@ -54,21 +54,24 @@ h1 {
     display: grid;
     position: relative;
     grid-template-columns: repeat(12, 1fr);
+    width: 70%;
+
 }
 
-.index-img-top img {
-    width: 70%;
-}
 
 .index-img-top {
     grid-column: 3 / span 4;
     grid-row: 1;
     position: absolute;
-    top: -60px;
+    top: -65px;
+    img {
+        width: 70%;
+    }
 }
 
 .index-img-bottom {
     grid-column: 4 / -1;
+
 }
 
 .text-container-index {

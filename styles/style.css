@@ -315,11 +315,15 @@ body {
   letter-spacing: 0.3px;
 }
 
+img {
+  width: 100%;
+}
+
 /*image linking is broken, weirdly applies properly when exact CSS is put directly into the style.css file*/
 .header-bkg-img {
   border: 3px solid black;
   height: 100vh;
-  background: url(../assets/home-1.jpeg);
+  background: url("/styles/assets/home-1.jpeg");
 }
 
 .header-bottom {
@@ -385,9 +389,6 @@ h1 {
   position: relative;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-}
-
-.index-img-top img {
   width: 70%;
 }
 
@@ -398,7 +399,11 @@ h1 {
   -ms-grid-row: 1;
   grid-row: 1;
   position: absolute;
-  top: -60px;
+  top: -65px;
+}
+
+.index-img-top img {
+  width: 70%;
 }
 
 .index-img-bottom {
@@ -422,6 +427,197 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+/* caroseul styling */
+.carousel {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.carousel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel-container span {
+  font-size: 36px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.carousel-img-container img {
+  border-radius: 50%;
+}
+
+.carousel p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+}
+
+/* about styling */
+.about-content {
+  background: url("/styles/assets/home-4.jpeg");
+  border: 2px solid black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about-text {
+  padding-left: 15px;
+}
+
+.text-container-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-item {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-icon span {
+  font-size: 28px;
+}
+
+.circle-icon {
+  width: 50px;
+  height: 50px;
+  border: 4px solid black;
+  border-radius: 50%;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.grid-unique {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/span 2;
+}
+
+.grid-SEO {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-column: 5/span 2;
+}
+
+.grid-retina {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/span 2;
+}
+
+.grid-ecommerce {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-column: 5/span 2;
+}
+
+.grid-options {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/span 2;
+}
+
+.grid-custom {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-column: 5/span 2;
+}
+
+/* team styling */
+.meet-team {
+  padding-top: 40px;
+}
+
+.grid-team {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.text-container-team {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/span 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.text-container-team h3 {
+  text-align: left;
+}
+
+.final-text-team {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+/* portfolio styling */
+.portfolio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #C3DAB7;
+}
+
+.portfolio-container .text-container-portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 50%;
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.portfolio-container .img-container-portfolio {
+  width: 50%;
 }
 
 footer {
