@@ -50,12 +50,12 @@ a {
     @include fontStyle(14px, 700, 0.7px);
     text-align: center;
     text-decoration: none;
+    color: $black;
 }
 
 nav a {
     @include fontStyle(14px, 400, 0.3px);
     text-align: left;
-    color: $black;
     &:hover {
         text-decoration: line-through;
     }
