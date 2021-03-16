@@ -28,7 +28,7 @@ ul {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
-    @include fontStyle(37, 700, 0.9px);
+    @include fontStyle(37px, 700, 0.9px);
     text-align: center;
 }
 
@@ -37,12 +37,12 @@ h3,
 h4 {
     font-family: 'Montserrat', sans-serif;
     @include fontStyle(18px, 400, 1.8px);
-    text-align: center;
 }
 
 h2 {
     text-transform: uppercase;
 }
+
 
 a {
     font-family: 'Montserrat', sans-serif;
@@ -73,4 +73,18 @@ body {
 
 img {
     width: 100%;
+}
+
+button {
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    @include fontStyle(14px, 400, 0.3px);
+    border-width: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid $black;
+}
+
+label {
+    visibility: hidden;
+    position: absolute;
 }

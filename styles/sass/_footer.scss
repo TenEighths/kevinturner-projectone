@@ -32,12 +32,11 @@ footer {
 
 .widget-footer {
     text-align: right;
-    h3 {
-        text-align: right;
-    }
 }
 
 input[type=text],
+input[type=email],
+textarea,
 .widget-submit-btn {
     padding: 10px 15px;
     font-size: 14px;

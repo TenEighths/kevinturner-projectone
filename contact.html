@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,7 +21,7 @@
                         <li><a href="">Blog</a></li>
                         <li><a href="">Portfolio</a></li>
                     </ul>
-                    <h1>Creative</h1>
+                    <h1>Creative</h2>
                     <ul class="right-nav">
                         <li><a href="">Shop</a></li>
                         <li><a href="">Contact</a></li>
@@ -35,47 +35,61 @@
 
     <main>
         <div class="contact-us-header">
-            <h1>Contact Us</h1>
+            <div class="wrapper"><h1>Contact <span>Us</span></h1></div>         
         </div>
 
-        <div class="contact-us-content">
+        <div class="contact-us-content wrapper">
             <h2>Contact Details</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, esse magnam placeat maiores totam dolorem sapiente tempora odit voluptate maxime officia in qui deleniti ex quos quae quaerat illum commodi!</p>
             <!-- maybe make these divs instead -->
-            <ul class="method-of-contact">
-                <li>
-                    <span>phone icon</span>
-                    <h3>Phone</h3>
-                    <p>Phone Number</p>
-                </li>
-                <li>
-                    <span>address icon</span>
-                    <h3>Address</h3>
-                    <p>Address</p>
-                </li>
-                <li>
-                    <span>email icon</span>
-                    <h3>Email</h3>
-                    <p>Email address</p>
-                </li>
-            </ul>
+            <div class="contact-details">
+                <ul class="method-of-contact">
+                    <li>
+                        <span class="fas fa-mobile-alt"></span>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>Phone Number</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="fas fa-map-marker-alt"></span>
+                        <div class="contact-text">
+                            <h3>Address</h3>
+                            <p>Address</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="fas fa-envelope"></span>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>Email</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="get-in-touch">
+        <div class="get-in-touch wrapper">
             <h3>Get in touch with Us</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam assumenda impedit blanditiis dolores, amet dolore libero sint officiis earum, optio quibusdam id aspernatur quisquam laudantium? Reiciendis fuga eius et.</p>
-
-            <form action="" class="contact-form">
-                <label for="input-name"></label>
-                <input type="text" name="input-name" id="input-name" placeholder="Enter Your Name" required>
-                <label for="input-email"></label>
-                <input type="email" name="input-email" id="input-email" required>
-                <label for="input-subject"></label>
-                <input type="text" name="input-subject" id="input-subject">
-                <label for="input-text-area"></label>
-                <textarea name="input-text-area" id="input-text-area" cols="30" rows="10"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
         </div>
+
+            <div class="feedback-form wrapper">
+                <form action="" class="contact-form">
+                    <div class="form-info">
+                        <label for="input-name"></label>
+                        <input type="text" name="input-name" id="input-name" placeholder="Enter Your Name" required>
+                        <label for="input-email"></label>
+                        <input type="email" name="input-email" id="input-email" required placeholder="Enter your Email">
+                        <label for="input-subject"></label>
+                        <input type="text" name="input-subject" id="input-subject" placeholder="Subject(Optional)">
+                    </div>
+                    <div class="form-textarea">
+                        <label for="input-text-area"></label>
+                        <textarea name="input-text-area" id="input-text-area" placeholder="Text Goes here" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </div>
         <div class="image-container-contact-footer"></div>
 
     </main>

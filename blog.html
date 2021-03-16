@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -100,35 +100,43 @@
             </div>
 
             <div class="comments-blog">
-                <div class="comment-img-container">
-                    <img src="" alt="">
+                <div class="comment-container">
+                    <div><img src="styles/assets/blog-6.jpeg" alt="a headshot of a red headed person with a bob style haircut"></div>
+                    <div class="comment-text-container">
+                        <span><h4>Daniel Vandaft</h4><a href="#"> - Reply</a></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Jul 17, 2015 at 15 hours ago</p>
+                    </div>
                 </div>
-                <div class="comment-img-container">
-                    <img src="" alt="">
-                </div>
-                <div class="comment-text-container">
-                    <h4>Daniel Vandaft</h4>
-                    <a href="#"> - Reply</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium sapiente laudantium odit esse perspiciatis cupiditate aspernatur, ut blanditiis eius totam nobis sed, officiis doloremque saepe dolore nisi aut culpa.</p>
-                    <p>Jul 17, 2015 at 15 hours ago</p>
-                    <h4>Jenifer Loopz</h4>
-                    <a href="#"> - Reply</a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti quis nihil nesciunt natus rem earum consequuntur quae? Labore reprehenderit commodi reiciendis veritatis praesentium doloremque. Illum expedita quos libero autem? Mollitia.</p>
-                    <p>Jul 17, 2015 at 15 hours ago</p>
+
+                <div class="comment-container">
+                    <div><img src="styles/assets/blog-7.jpeg" alt="a person in a white longsleeve shirt against a yellow background"></div>
+                    <div class="comment-text-container">
+                        <span><h4>Jenifer Loopz</h4><a href="#"> - Reply</a></span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Jul 17, 2015 at 15 hours ago</p>
+                    </div>
                 </div>
             </div>
 
-            <form action="" class="contact-form">
-                <label for="input-name"></label>
-                <input type="text" name="input-name" id="input-name" placeholder="Enter Your Name" required>
-                <label for="input-email"></label>
-                <input type="email" name="input-email" id="input-email" required>
-                <label for="input-subject"></label>
-                <input type="text" name="input-subject" id="input-subject">
-                <label for="input-text-area"></label>
-                <textarea name="input-text-area" id="input-text-area" cols="30" rows="10"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <h3>Leave a Comment</h3>
+            <div class="feedback-form">
+                <form action="" class="contact-form">
+                    <div class="form-info">
+                        <label for="input-name"></label>
+                        <input type="text" name="input-name" id="input-name" placeholder="Enter Your Name" required>
+                        <label for="input-email"></label>
+                        <input type="email" name="input-email" id="input-email" required placeholder="Enter your Email">
+                        <label for="input-subject"></label>
+                        <input type="text" name="input-subject" id="input-subject" placeholder="Enter your name">
+                    </div>
+                    <div class="form-textarea">
+                        <label for="input-text-area"></label>
+                        <textarea name="input-text-area" id="input-text-area" placeholder="Text Goes here"></textarea>
+                    </div>
+                    <button type="submit">Submit Comment</button>
+                </form>
+            </div>
 
         </section>
     </main>
