@@ -4,6 +4,45 @@
 
 /* INDEX STYLING */
 
+.img-container-index {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+    width: 70%;
+
+}
+
+.index-img-top {
+    @include gridPos(1, 3 / span 4);
+    position: absolute;
+    top: -65px;
+    img {
+        width: 70%;
+    }
+}
+
+.index-img-bottom {
+    grid-column: 4 / -1;
+
+}
+
+.text-container-index {
+    display: flex;
+    padding-top: 40px;
+    text-align: center;
+    h2 {
+        padding: 15px;
+    }
+} 
+
+.text-index-left,
+.text-index-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
 /* caroseul styling */
 
 .carousel {
@@ -20,10 +59,9 @@
     }
 }
 
-
-
 .carousel-img-container img{
     border-radius: 50%;
+    margin-bottom: 30px;
 }
 
 .carousel p {
@@ -34,12 +72,14 @@
     
 }
 
+
+
 /* about styling */
 
 .about-content {
     background: url('assets/home-4.jpeg');
     background-size: cover;
-    padding: 40px 0;
+    //padding: 80px 0;
 }
 
 .about-text {
@@ -53,7 +93,7 @@
 }
 
 .grid-item {
-    padding-left: 20px;
+    padding: 20px 80px;
     display: flex;
     align-items: center;
     h3 {
@@ -133,19 +173,25 @@
     .text-container-portfolio {
         display: flex;
         flex-direction: column;
-        max-width: 300px;
         margin: 0 auto;
         justify-self: center;
+        justify-content: center;
         align-self: center;
+        text-align: center;
+        div {
+            padding: 40px 100px;
+            width: 100%;
+            a {
+                color: $black;
+                padding: 15px;
+                background-color: $white-two;
+            }
+        }
+        
     } div {
         width: 50%;
     }
-    a {
-        color: $black;
-        margin: 15px 50px;
-        padding: 15px;
-        background-color: $white-two;
-    }
+    
     .img-container-portfolio {
         width: 50%;
     } img {
@@ -327,32 +373,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
-
 
 /* Contact Styling */
-
-.contact-us-header {
-   margin-bottom: 80px;
-   background: url("assets/contact-1.jpeg");
-   background-size: cover;
-   position: relative;
-   height: 30vh;
-    h1 {
-        text-align: left;
-        margin: 0;
-        position: absolute;
-        top: 130px;
-        //found this method for breaking the h1 https://css-tricks.com/injecting-line-break/
-        span {
-            display: block;
-            padding: 20px 0;
-            &::before {
-                content: attr(data-text);
-            }
-        }
-    }
-}
 
 .contact-us-content {
     h2 {
@@ -399,8 +423,9 @@
 }
 
 .image-container-contact-footer {
-    background: url("assets/contact-2.jpeg");
-    height: 100vh;
+    @include div-same-size-as-background-img("assets/contact-2.jpeg");   
+    padding-top: 36%;
+
 }
     
     

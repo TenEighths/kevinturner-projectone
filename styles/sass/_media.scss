@@ -1,0 +1,221 @@
+@import 'var';
+@import 'mixins';
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1430px) {
+    .grid-item {
+        padding: 20px 40px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .grid-icon {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1230px) {
+    .about-content {
+        background: $white-two
+    }
+    .grid-unique {
+        @include gridPos(1, 1 / span 2);
+    }
+    
+    .grid-SEO {
+        @include gridPos(1, 3 / span 2);
+    }
+    
+    .grid-retina {
+        @include gridPos(2, 1 / span 2);
+    }
+    
+    .grid-ecommerce {
+        @include gridPos(2, 3 / span 2);
+    }
+    
+    .grid-options {
+        @include gridPos(1, 5 / span 2);
+    }
+    
+    .grid-custom {
+        @include gridPos(2, 5 / span 2);
+    }
+}
+
+@media (max-width: 1160px) {
+    .top-footer {
+        .recent-footer ul {
+            list-style-type: none;
+        }
+    }
+    .widget-footer {
+        text-align: start;
+    }
+}
+
+@media(max-width: 940px) {
+    .img-container-portfolio {
+        display: none;
+    }
+    .portfolio-container {
+        .text-container-portfolio div {
+            padding: 40px 0;
+        }
+    }
+    .text-index-left, .text-index-right {
+        width: auto;
+    }
+    .blog-header-container {
+        text-align: start;
+        h2 {
+            line-height: 30px;
+        }
+    }
+    .top-of-blog {
+        flex-direction: column;
+    }
+    .admin-blog {
+        img {
+            display: none;
+        }
+    }
+    .desc-blog {
+        flex-direction: column;
+        div {
+            padding-left: 0;
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .img-container-index {
+        display: none;
+    }
+    .text-container-index {
+        display: flex;
+        flex-direction: column;
+    }
+    .header-bottom {
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .grid-unique {
+        @include gridPos(1, 1 / span 3);
+    }
+    
+    .grid-SEO {
+        @include gridPos(1, 4 / span 3);
+    }
+    
+    .grid-retina {
+        @include gridPos(2, 1 / span 3);
+    }
+    
+    .grid-ecommerce {
+        @include gridPos(2, 4 / span 3);
+    }
+    
+    .grid-options {
+        @include gridPos(3, 1 / span 3);
+    }
+    
+    .grid-custom {
+        @include gridPos(3, 4 / span 3);
+    }
+
+    .grid-team-img {
+        display: none;
+    }
+    .text-container-team {
+        @include gridPos(1, 1 / span 5);
+    }
+    .contact-details {
+        padding: 0;
+        ul {
+            flex-direction: column;
+            li {
+                &:not(:first-child) {
+                    border-left: none;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    //need to do nav here
+}
+
+@media (max-width: 660px) {
+    .top-footer {
+        justify-content: start;
+    }
+    .carousel {
+        p {
+            width: auto;
+        }
+    }
+    .about-text {
+        padding-left: 0;
+    }
+    .carousel-container {
+        display: none;
+    }
+    .final-text-team {
+        @include gridPos(2, 1 / span 4);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        align-items: flex-start;
+        h3 {
+            padding: 0;
+        }
+    }
+    .blog-header {
+        height: auto;
+        background: none;
+    }
+    .contact-us-header {
+        height: auto;
+        background: none;
+        margin-bottom: 40px;
+        h1 {
+            position: static;
+        }
+    }
+    .feedback-form input[type="text"], 
+    .feedback-form input[type="email"] {
+        padding: 10px 15px;
+    }
+
+    .comments-blog {
+        padding-top: 20px;
+    }
+
+    .comment-text-container {
+        padding-left: 30px;
+    }
+    .comment-container {
+        span {
+            padding: 0;
+        }
+        div img{
+            display: none;
+        }
+    }
+    .social-blog {
+        display: none;
+    }
+    .related-content-blog {
+        display: none;
+    }
+    .image-container-contact-footer {
+        display: none;
+    }
+}
