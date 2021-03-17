@@ -168,14 +168,14 @@
     .final-text-team {
         @include gridPos(2, 1 / span 4);
     }
-}
-
-@media (max-width: 480px) {
-    .grid-item {
-        align-items: flex-start;
-        h3 {
-            padding: 0;
-        }
+    .header-bkg-img {
+        display: none;
+    }
+    .header-top ul {
+        display: none;
+    }
+    header span {
+        visibility: visible;
     }
     .blog-header {
         height: auto;
@@ -189,6 +189,18 @@
             position: static;
         }
     }
+
+
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        align-items: flex-start;
+        h3 {
+            padding: 0;
+        }
+    }
+    
     .feedback-form input[type="text"], 
     .feedback-form input[type="email"] {
         padding: 10px 15px;

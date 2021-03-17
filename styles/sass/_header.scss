@@ -13,6 +13,10 @@ header nav {
     margin-bottom: 15px;
 }
 
+header span {
+    visibility: hidden;
+}
+
 .left-nav {
     display: flex;   
     flex: 0 1 300px;
