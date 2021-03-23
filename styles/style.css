@@ -523,6 +523,10 @@ header span {
   padding: 0 40px;
 }
 
+.carousel-container span:active {
+  color: orange;
+}
+
 .carousel-img-container img {
   border-radius: 50%;
   margin-bottom: 30px;
@@ -1361,9 +1365,6 @@ label[for=email-notifications] {
 
 @-webkit-keyframes fade {
   0% {
-    opacity: 1;
-  }
-  50% {
     opacity: 0;
   }
   100% {
@@ -1373,9 +1374,6 @@ label[for=email-notifications] {
 
 @keyframes fade {
   0% {
-    opacity: 1;
-  }
-  50% {
     opacity: 0;
   }
   100% {
@@ -1385,9 +1383,6 @@ label[for=email-notifications] {
 
 @-webkit-keyframes fade-2 {
   0% {
-    opacity: 1;
-  }
-  50% {
     opacity: 0;
   }
   100% {
@@ -1397,9 +1392,6 @@ label[for=email-notifications] {
 
 @keyframes fade-2 {
   0% {
-    opacity: 1;
-  }
-  50% {
     opacity: 0;
   }
   100% {
